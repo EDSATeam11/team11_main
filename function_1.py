@@ -10,33 +10,44 @@ Original file is located at
 Write a function which takes in a list of integers and returns a dictionary of the mean, median, variance, standard deviation, min and max. Answers should be rounded to the second decimal.
 """
 
-def dictionary_of_metrics(items):
+def dictionary_of_metrics(lisofints):
   #our code here
-  return dictionary
+  return 0
 
 def get_mean(listofints):
   #our code here
-  return mean
+  return 0
 
 def get_median(listofints):
   #our code here
-  return median
+  return 0
 
 def get_variance(listofints):
   #our code here
-  return variance
+  return 0
 
 def get_STD(listofints):
   #our code here
-  return STD
+  return 0
 
 def get_min(listofints):
   #our code here
-  return minimum
+  return 0
 
 def get_max(listofints):
   #our code here
-  return maximum
+  return 0
+
+if __name__ == '__main__':
+  #run functions in main here
+  ints = [39660.0,36024.0,32127.0,39488.0,18422.0,23532.0,8842.0,37416.0,16156.0,18730.0,19261.0,25275.0]
+  print('get mean function : ',get_mean(ints)==26244.42)
+  print('get median function : ',get_median(ints)==24403.5)
+  print('get variance function : ',get_variance(ints)==108160153.17)
+  print('get STD function : ',get_STD(ints)==10400.01)
+  print('get min function : ',get_min(ints)==8842.0)
+  print('get max function : ',get_max(ints)==39660.0)
+            
 
 """_**Expected Output**_:
 ```python
