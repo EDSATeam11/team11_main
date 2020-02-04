@@ -22,7 +22,8 @@ def get_mean(listofints):
 
 def get_median(listofints):
   #Courtney
-  return 0
+  median = round(np.median(listofints),1)
+  return median
 
 def get_variance(listofints):
   #Monica
