@@ -15,27 +15,27 @@ def dictionary_of_metrics(lisofints):
   return 0
 
 def get_mean(listofints):
-  #our code here
+  #Mikael
   return 0
 
 def get_median(listofints):
-  #our code here
+  #Courtney
   return 0
 
 def get_variance(listofints):
-  #our code here
+  #Monica
   return 0
 
 def get_STD(listofints):
-  #our code here
+  #Olwethu
   return 0
 
 def get_min(listofints):
-  #our code here
+  #Olwethu
   return 0
 
 def get_max(listofints):
-  #our code here
+  #Olwethu
   return 0
 
 if __name__ == '__main__':
