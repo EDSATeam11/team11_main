@@ -9,6 +9,7 @@ Original file is located at
 # Function 1: Metric Dictionary
 Write a function which takes in a list of integers and returns a dictionary of the mean, median, variance, standard deviation, min and max. Answers should be rounded to the second decimal.
 """
+import numpy as np
 
 def dictionary_of_metrics(lisofints):
   #our code here
@@ -16,7 +17,8 @@ def dictionary_of_metrics(lisofints):
 
 def get_mean(listofints):
   #Mikael
-  return 0
+  mean = round(np.mean(listofints), 2)
+  return mean
 
 def get_median(listofints):
   #Courtney
