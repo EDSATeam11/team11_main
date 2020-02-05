@@ -31,16 +31,19 @@ def dictionary_of_metrics(listofints):
 def get_mean(listofints):
   #Mikael
   mean = round(np.mean(listofints), 2)
-  return mean
-
-def get_median(listofints):
-  #Courtney
   median = round(np.median(listofints),1)
-  return median
+  variance = 0
+  STD = 0
+  minimum = 0
+  maximum = 0
+
+  #Mikael: return the dictionary
+  return mean
 
 def get_variance(listofints):
   #Monica
-  return 0
+  print(round(np.var(listofints), 2))
+  return round(np.var(listofints), 1)
 
 def get_STD(listofints):
   #Olwethu
@@ -58,7 +61,7 @@ if __name__ == '__main__':
   #run functions in main here
   ints = [39660.0,36024.0,32127.0,39488.0,18422.0,23532.0,8842.0,37416.0,16156.0,18730.0,19261.0,25275.0]
   print('get mean function : ',get_mean(ints)==26244.42)
-  print('get median function : ',get_median(ints)==24403.5)
+  #print('get median function : ',get_median(ints)==24403.5)
   print('get variance function : ',get_variance(ints)==108160153.17)
   print('get STD function : ',get_STD(ints)==10400.01)
   print('get min function : ',get_min(ints)==8842.0)

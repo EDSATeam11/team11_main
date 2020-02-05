@@ -8,13 +8,13 @@ import function_1
 import numpy as np
 
 def five_num_summ(gauteng):
-    maximum = function_1.get_max(gauteng)
-    median = function_1.get_median(gauteng)
-    minimum = function_1.get_min(gauteng)
+    maximum = max(gauteng)
+    median = round(np.median(gauteng),1)
+    minimum = min(gauteng)
 
-    #code for q1
+    #Courtney : q1 code
     q1 = 0
-    #code for q3
+    #Courtney : q3 code
     q3 = 0
 
     #create dictionary
@@ -29,7 +29,5 @@ def five_num_summ(gauteng):
 
 if __name__ == '__main__':
     gauteng = [39660.0,36024.0,32127.0,39488.0,18422.0,23532.0,8842.0,37416.0,16156.0,18730.0,19261.0,25275.0]
-    # print('max = ', five_num_summ(gauteng)==39660.0)
-    # print('median = ', five_num_summ(gauteng)==24403.5)
-    # print('min = ', five_num_summ(gauteng)==8842.0)
-    # print('q3 = ', five_num_summ(gauteng)==36024.5)
+    #print('q1 = ', finve_num_sum(gauteng==18422.5)
+    #print('q3 = ', five_num_summ(gauteng)==36024.5)
