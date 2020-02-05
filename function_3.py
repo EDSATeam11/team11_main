@@ -2,7 +2,7 @@
 #Write a function which takes a list of datetime strings and converts it into a list of strings with only the date.
 
 def date_parser(list_dates):
-    #extract the date only : Courtney
+    #extract the date only : Mikael
 
     #append dates to new list : Mikael
     return 0
