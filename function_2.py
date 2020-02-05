@@ -5,6 +5,7 @@ Write a function which takes in a list of integers and returns a dictionary of t
 Answers should be rounded to the nearest second decimal.
 """
 import function_1
+import numpy as np
 
 def five_num_summ(gauteng):
     maximum = function_1.get_max(gauteng)
@@ -12,7 +13,7 @@ def five_num_summ(gauteng):
     minimum = function_1.get_min(gauteng)
 
     #code for q1
-    q1 = 0
+    q1 = 
     #code for q3
     q3 = 0
 
