@@ -18,7 +18,12 @@ def five_num_summ(gauteng):
     q3 = 0
 
     #create dictionary
-    dct = 0
+    dct = {}
+    dct['maximum'] = maximum
+    dct['median'] = median
+    dct['minimum'] = minimum
+    dct['q1'] = q1
+    dct['q3'] = q3
 
     return dct
 

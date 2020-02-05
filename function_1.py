@@ -11,9 +11,22 @@ Write a function which takes in a list of integers and returns a dictionary of t
 """
 import numpy as np
 
-def dictionary_of_metrics(lisofints):
+def dictionary_of_metrics(listofints):
   #our code here
-  return 0
+  
+  #instantiate empty dictionary
+  dict = {}
+
+  #create key and value pairs for dictionary
+  dict['mean'] = get_mean(listofints)
+  dict['median'] = get_median(listofints)
+  dict['variance'] = get_variance(listofints)
+  dict['standard deviation'] = get_STD(listofints)
+  dict['min'] = get_min(listofints)
+  dict['max'] = get_max(listofints)
+  
+  #return the dictionary
+  return dict
 
 def get_mean(listofints):
   #Mikael
