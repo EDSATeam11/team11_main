@@ -13,7 +13,7 @@ def five_num_summ(gauteng):
     minimum = function_1.get_min(gauteng)
 
     #code for q1
-    q1 = 
+    q1 = 0
     #code for q3
     q3 = 0
 
