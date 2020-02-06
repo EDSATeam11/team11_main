@@ -23,6 +23,17 @@ def extract_municipality_hashtags(df):
     #add new column to dataframe : Courtney
 
     #extract the hastag : Mikael
+    df['hashtags'] = df['Tweets'].str.lower().str.split()
+
+    i = 0
+
+    for tweet in df['hashtags']:
+      hashtags = []
+      for word in tweet:
+         if word.startswith('#'):
+           hashtags.append(word)
+      df.loc[i, 'hashtags'] = hashtags
+      i += 1
 
     #add new column to dataframe : Monica
 

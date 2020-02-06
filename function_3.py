@@ -3,9 +3,13 @@
 
 def date_parser(list_dates):
     #extract the date only : Mikael
-
-    #append dates to new list : Mikael
-    return 0
+    new_list = []
+    for item in list_dates:
+        item = item.split(' ')
+        #append dates to new list : Mikael
+        new_list.append(item[0])
+  
+    return new_list
 
 if __name__ == '__main__':
     dates = ['2019-11-29 12:50:54',
