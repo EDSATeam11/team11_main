@@ -19,7 +19,14 @@ def extract_municipality_hashtags(df):
             '@centlecutility' : 'Mangaung',
             '@NMBmunicipality' : 'Nelson Mandela Bay',
             '@CityTshwane' : 'Tshwane'}
-
+          
+    l = 0
+    for tweet in df['Tweets']:
+        tweet = tweet.split(' ')
+        for key in municipality_dict.keys():
+            if key in tweet:
+               df.loc[l, 'municipality'] = municipality_dict[key]
+        l += 1
     #add new column to dataframe : Courtney
 
     #extract the hastag : Mikael
@@ -36,14 +43,13 @@ def extract_municipality_hashtags(df):
       i += 1
 
     #add new column to dataframe : Monica
-
     #change the column headers of added columns : Courtney
     #The column headers should be "municipality" & "hashtags" respectively.
 
     #Change those tweets which don't have the either a municipality nor a hashtag, fill it with 'np.nan' : Olwethu
 
     #return new dataframe : Mikael
-    return 0
+    return df
 
 if __name__ == '__main__':
     url = 'https://raw.githubusercontent.com/RidhaMoosa/eskom_data-/master/twitter_nov_2019.csv'
