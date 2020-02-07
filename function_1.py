@@ -47,15 +47,24 @@ def get_variance(listofints):
 
 def get_STD(listofints):
   #Olwethu
-  return 0
+  STD = np.std(listofints)
+  return STD
 
 def get_min(listofints):
-  #Olwethu
-  return 0
+  myMin =l[0]
+   for i in l[0:]:
+       if i < myMin:
+           myMin = i
+   return myMin
+
 
 def get_max(listofints):
-  #Olwethu
-  return 0
+  myMax =l[0]
+   for i in l[0:]:
+       if i > myMax:
+           myMax = i
+   return myMax
+
 
 if __name__ == '__main__':
   #run functions in main here
